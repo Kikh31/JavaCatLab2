@@ -25,5 +25,7 @@ public class  App {
                 .breed("Huyapai")
                 .color(Color.GREY)
                 .build();*/
+        CatDAO catDAO = new CatDAO();
+        System.out.println(catDAO.getById(2).getName());
     }
 }

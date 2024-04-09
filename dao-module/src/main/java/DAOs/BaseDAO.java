@@ -8,7 +8,7 @@ import java.util.List;
 
 public abstract class BaseDAO<T> {
     private final Class<T> tClass;
-    private final SessionFactory sessionFactory;
+    protected final SessionFactory sessionFactory;
 
     public BaseDAO(Class<T> _tClass) {
         tClass = _tClass;
